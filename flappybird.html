@@ -12,9 +12,19 @@
             height: 100vh;
             margin: 0;
             background-color: #f0f0f0;
+            flex-direction: column; /* Stack elements vertically */
+            font-family: Arial, sans-serif;
         }
         #gameCanvas {
             border: 2px solid #000;
+        }
+        .instructions { 
+            text-align: center;
+            margin-top: 20px;
+            background-color: #6979d4;
+            padding: 20px;
+            border: 2px solid #000;
+            max-width: 400px; /* Adjust width as needed */
         }
     </style>
 </head>
@@ -143,6 +153,16 @@
 
         gameLoop();
     </script>
+
+    <div class="instructions">
+        <h2>How to Play Flappy Bird:</h2>
+        <p>Press the Spacebar to make the bird flap upwards.</p>
+        <p>Avoid hitting the green pipes.</p>
+        <p>Each successful pass through a pair of pipes scores a point.</p>
+        <p>Game ends if the bird hits the ground or a pipe.</p>
+        <p>Click the game area to start or restart the game.</p>
+    </div>
+
     <a href="index.html">Home</a>
 </body>
 </html>

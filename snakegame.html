@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snake Game</title>
     <style>
+        
         body {
-            display: flex;
+            
             justify-content: center;
             align-items: center;
             height: 100vh;
@@ -14,11 +15,25 @@
             background-color: #f0f0f0;
         }
         #gameCanvas {
+            display: flex;
+            margin-left: 40%;
             border: 2px solid #000;
+        }
+        .instructions {
+            margin-top: 20px;
+            text-align: center;
+            padding-bottom: 20px; /* Added padding at the bottom */
+            background-color: #ffffff; /* White background for instructions */
+            border-top: 2px solid #000; /* Top border for separation */
+        }
+        .instruction-text {
+            text-align: left; /* Align text to the left */
+            margin-left: 20px; /* Add some left margin for better readability */
         }
     </style>
 </head>
 <body>
+    <div>
     <canvas id="gameCanvas" width="400" height="400"></canvas>
 
     <script>
@@ -145,6 +160,14 @@
 
         drawGame();
     </script>
+</div>
+<div class="instructions">
+        
+    <h2>How to Play:</h2>
+    <p>Use arrow keys to control the snake.</p>
+    <p>Eat the red squares (food) to grow.</p>
+    <p>Avoid running into walls or yourself!</p>
+</div>
     <a href="index.html">Home</a>
 </body>
 </html>
